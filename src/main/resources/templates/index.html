@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X-Chat</title>
+</head>
+<body>
+    <button onclick="conectWebSocket()">连接WebSocket</button>
+    <button onclick="closeWebSocket()">关闭WebSocket</button>
+    <hr/>
+    <input id="sendText" type="text"/><button onclick="send()">发送</button>
+    <div id="message">
+
+    </div>
+</body>
+<script type="text/javascript">
+    var websocket = null;
+    
+    function conectWebSocket() {
+        if('WebSocket' in window){
+            websocket = new WebSocket("ws://localhost:2922/websocket")
+        }else{
+            alert("Not Support WebSocket")
+        }
+
+        websocket.onerror = function(event){
+            wirteMessageInnerHTML("System Message: error");
+        }
+
+        websocket.onopen = function(){
+            wirteMessageInnerHTML("System Message: 成功建立连接");
+        }
+
+        websocket.onmessage = function(event){
+            wirteMessageInnerHTML(event.data);
+        }
+
+        websocket.onclose = function(){
+            wirteMessageInnerHTML("System Message: 关闭连接");
+        }
+
+        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+        window.onbeforeunload = function(){
+            websocket.close();
+        }
+    }
+
+    //展示消息
+    function wirteMessageInnerHTML(innerHTML){
+        document.getElementById("message").innerHTML += innerHTML + '<br/>'
+    }
+
+    //关闭WebSocket
+    function closeWebSocket(){
+        websocket.close();
+    }
+
+    //发送消息
+    function send(){
+        var message = document.getElementById("sendText").value;
+        if(websocket != null){
+            websocket.send(message)
+        }
+    }
+</script>
+</html>
