@@ -1,0 +1,11 @@
+create database xchat charset=utf8;
+
+create table user(
+id int(4) primary key auto_increment,
+nickname varchar(64),
+qq varchar(64),
+ip varchar(64),
+equipment varchar(128),
+attended_mode varchar(128),
+created_time date,
+);
