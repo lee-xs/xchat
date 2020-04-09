@@ -24,7 +24,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String ip = IpUtils.getIpAddress(request);
+        String ip = request.getRequestURI().substring(6, request.getRequestURI().length());
         User user = userService.findUserByIp(ip);
         if(user == null){
             user = new User();

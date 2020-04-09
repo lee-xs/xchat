@@ -2472,7 +2472,7 @@ Table.prototype = {
         }
         var trData = locationData.tr;
         var tdData = locationData.td;
-        var tdIndex = tdData.index;
+        var tdIndex = tdData.test;
         var $currentTr = $(trData.elem);
         var $trParent = $currentTr.parent();
         var $trs = $trParent.children();
@@ -2511,7 +2511,7 @@ Table.prototype = {
         }
         var trData = locationData.tr;
         var tdData = locationData.td;
-        var tdIndex = tdData.index;
+        var tdIndex = tdData.test;
         var $currentTr = $(trData.elem);
         var $trParent = $currentTr.parent();
         var $trs = $trParent.children();

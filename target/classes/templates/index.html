@@ -1,50 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>X-Chat</title>
-    <link rel="stylesheet" href="layui/css/layui.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XChat</title>
+
+    <!-- Soho css -->
+    <link rel="stylesheet" href="css/soho.min.css">
 </head>
-<body style="">
-    <!--头部 -->
-    <div id="header" style="width: 100%; height: 50px; line-height: 50px; font-size: 20px; text-align: center; background-color: #fff; box-shadow: 0 1px 3px rgba(26,26,26,.2);">
-        <p>欢迎使用XChat在线聊天室</p>
-    </div>
+<body>
+<!-- layout -->
+<div class="layout">
 
-    <!-- 内容展示区 --><!--  background-image: url('http://qiniu.aleestar.cn/sketchBg03.jpg'); background-size: cover; -->
-    <div id="main" style="width: 100%; height: 500px; overflow: auto;">
-        <div id="message" style="width: 100%; ">
+    <!-- content -->
+    <div class="content" style="padding: 20px;">
+        <!-- chat -->
+        <div class="chat">
+            <div class="chat-header" style="padding-bottom: 10px;">
+                <div class="chat-header-user">
+                    <figure class="avatar avatar-lg">
+                        <img id="infoAvatar" class="rounded-circle">
+                    </figure>
+                    <div>
+                        <h5 id="infoName">Admin</h5>
+                        <small class="text-muted">
+                            <i>Online</i>
+                        </small>
+                    </div>
+                </div>
+                <div class="chat-header-action" style="text-align: right;">
+                    <p id="online"></p>
+                    <p id="date">2020/4/9 14:34:20</p>
+                </div>
+            </div>
+            <div id="main" class="chat-body">
+                <div id="message" class="messages">
+                    <!-- 内容展示区域 -->
+                </div>
+            </div>
+            <div class="chat-footer">
+                <form onsubmit="return false">
+                    <input id="inputMessage" type="text" class="form-control" placeholder="请输入内容">
+                    <div class="form-buttons">
+                        <div onclick="send()" class="btn btn-primary btn-floating">
+                            <i class="fa fa-send"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
 
         </div>
+        <!-- ./ chat -->
     </div>
+    <!-- ./ content -->
+</div>
+<!-- ./ layout -->
 
-    <!-- 文本输入 -->
-    <div style="width: 100%; overflow: hidden;"><!--  position: absolute; bottom: 0; -->
-        <div style="padding: 0 10px; height: 40px; line-height: 40px; background-color: #c9c9c9; border-top: 1px solid #A3A3A3;">
-            <div style="float: left">
-                <span id="infoName"></span>
-                <span id="online"></span>
-            </div>
-            <div style="float: right">
-                <div onclick="send()" style="width: 60px;" class="layui-btn layui-btn-sm layui-btn-normal">发送</div>
-                <div onclick="remove()" style="width: 60px;" class="layui-btn layui-btn-sm layui-btn-danger">清空</div>
-            </div>
-        </div>
-        <textarea id="inputMessage" style="width: 100%; height: 100px; resize: none;"></textarea>
-    </div>
-
-    <!-- 输入用户名 -->
     <div id="inputName" style="display: none; padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">
         <input type="text" id="name" name="title" placeholder="请输入用户名"  class="layui-input">
     </div>
 </body>
-<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
-<!--<script src="wangEditor-3.1.1/release/wangEditor.js"></script>-->
+
+
+<!-- JQuery -->
 <script src="js/jquery-3.4.1.js"></script>
+<!-- Bootstrap -->
+<!--<script src="vendor/bootstrap/bootstrap.min.js"></script>-->
+<!-- Nicescroll -->
+<!--<script src="vendor/jquery.nicescroll.min.js"></script>-->
+<!-- Soho -->
+<!--<script src="js/soho.min.js"></script>-->
+<!-- sohu ip -->
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<!-- layui js -->
 <script src="layui/layui.all.js"></script>
+
 <script type="text/javascript">
     let websocket = null;
     let user = {};
+
+    //时间走动
+    getDates()
 
     $(document).ready(function () {
         console.log("访问IP地址 =====> " + returnCitySN["cip"])
@@ -58,26 +97,27 @@
             async: false,
             success: function(res) {
                 user = res.data
-                $('#infoName').text("当前用户：" + user.name)
+                console.log(user)
+                $('#infoName').text("用户名：" + user.name)
+                $('#infoAvatar').attr('src', user.avatar)
                 handleTimerOnline()
-                setInterval("handleTimerOnline()", 5000)
+                setInterval("handleTimerOnline()", 2000)
             }
         })
 
-
-        if(user.name == '' || user.name == null || user.name == undefined){
+        if(user.name == "" || user.name == null || user.name == undefined){
             layui.use(['layer'], function () {
                 const layer = layui.layer
 
                 /**
                  * 打开输入用户名输入框
                  */
-                layer.open({
+                parent.layer.open({
                     type: 1
                     ,title: false //不显示标题栏
                     ,closeBtn: false
                     ,area: '300px;'
-                    ,shade: 0.8 //遮罩透明度
+                    //,shade: 0.8 //遮罩透明度
                     ,id: 'name_enter' //设定一个id，防止重复弹出
                     ,btn: ['确认']
                     ,btnAlign: 'c'  // 按钮居中对齐
@@ -102,9 +142,8 @@
             })
         }
 
-
-
         if('WebSocket' in window) {
+            //websocket = new WebSocket("ws://ali.aleestar.cn/websocket/" + returnCitySN["cip"])
             websocket = new WebSocket("ws://localhost:2922/websocket/" + returnCitySN["cip"])
         } else {
             alert("Not Support WebSocket")
@@ -119,7 +158,7 @@
         }
 
         websocket.onmessage = function(event){
-            wirteMessageInnerHTML(event.data);
+            parseMassage(event.data);
         }
 
         websocket.onclose = function(){
@@ -134,49 +173,29 @@
         }
     })
 
-    function conectWebSocket() {
-        var nickname = document.getElementById("nickname").value;
-        if(nickname == null || nickname == ''){
-            alert("昵称不能为空！")
-            return;
-        }
-
-        if('WebSocket' in window){
-            websocket = new WebSocket("ws://localhost:2922/websocket/" + nickname)
-        }else{
-            alert("Not Support WebSocket")
-        }
-
-        websocket.onerror = function(event){
-            wirteMessageInnerHTML("【系统消息】=> error");
-        }
-
-        websocket.onopen = function(){
-            wirteMessageInnerHTML("【系统消息】=> 成功连接服务器...");
-        }
-
-        websocket.onmessage = function(event){
-            wirteMessageInnerHTML(event.data);
-        }
-
-        // websocket.onclose = function(){
-        //     wirteMessageInnerHTML("【系统消息】=> 关闭连接");
-        // }
-
-        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
-        window.onbeforeunload = function(){
-            websocket.close();
-        }
-    }
 
     /**
-     * 展示消息 输出信息到页面展示
-     * @param innerHTML
+     * 将消息对象进行处理后展示
      */
-    function wirteMessageInnerHTML(innerHTML){
-        document.getElementById("message").innerHTML += innerHTML
-        const main = document.getElementById("main")
-        main.scrollTop = main.scrollHeight
+    function parseMassage(data){
+        data = JSON.parse(data)
+        let message;
+        if(data.user.name == user.name){
+            message = `<div class="message-item outgoing-message">`
+        } else {
+            message = `<div class="message-item">`
+        }
+        message += `<div style="text-align: right;font-size: 12px; margin: 10px 0 5px; color: #828282;">【${data.user.name}】  ${data.now}</div><div><span style='font-size: 14px; float: right; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div></div>`
+        wirteMessageInnerHTML(message)
+    }
+    /**
+     * 展示消息 输出信息到页面展示
+     * @param data
+     */
+    function wirteMessageInnerHTML(data) {
+        document.getElementById("message").innerHTML += data
+        const that = document.getElementById("main")
+        that.scrollTop = that.scrollHeight
     }
 
     /**
@@ -187,12 +206,21 @@
     }
 
     /**
+     * 回车触发发送
+     */
+    $('#inputMessage').keyup(function (event) {
+        if(event.keyCode == 13){
+            send()
+        }
+    })
+
+    /**
      * 向服务器发送消息
      */
     function send() {
         let that = document.getElementById("inputMessage")
-        const message = that.value;
-        if(websocket != null && (message != null || message != '' || message != undefined)){
+        let message = that.value
+        if(websocket != null && (message != null && message != "" && message != undefined && message != "\n")){
             websocket.send(message)
             that.value = ''
         }
@@ -220,19 +248,34 @@
      */
     function handleTimerOnline() {
         $.get('/online', function (res) {
-            $('#online').text("当前在线人数：" + res.data.online)
+            $('#online').text("当前系统在线人数：" + res.data.online)
         })
     }
-</script>
-<script type="text/javascript">
-    // var E = window.wangEditor;
-    // var editor = new E("#editor");
-    // editor.create();
+
+    /**
+     * 时间走动
+     */
+    function getDates() {
+        let w_array = new Array("星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+        let d = new Date();
+        let year = d.getFullYear();
+        let month = d.getMonth() + 1;
+        let day = d.getDate();
+        let week = d.getDay();
+        let h = d.getHours();
+        let mins = d.getMinutes();
+        let s = d.getSeconds();
+
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+        if (h < 10) h = "0" + h;
+        if (mins < 10) mins = "0" + mins;
+        if (s < 10) s = "0" + s;
+
+        let shows = "当前时间： <span>" + year + "-" + month + "-" + day + " " + h + ":" + mins + ":" + s + " " + w_array[week] + "</span>";
+        document.getElementById("date").innerHTML = shows;
+        setTimeout("getDates()",1000);
+    }
 </script>
 
-<style type="text/css">
-/*.w-e-text-container {*/
-/*    height: 150px !important;*/
-/*}*/
-</style>
 </html>

@@ -1,7 +1,11 @@
 package cn.lixinblog.websocket;
 
+import cn.lixinblog.entity.Message;
 import cn.lixinblog.entity.User;
 import cn.lixinblog.service.UserService;
+import cn.lixinblog.utils.CommonUtils;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +15,7 @@ import org.springframework.stereotype.Component;
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -19,6 +24,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @ServerEndpoint("/websocket/{ip}")
 @Component
 public class MyWebSocket {
+
+    /** ######################### ↓↓↓↓↓ ######################### */
 
     private static UserService userService;
 
@@ -56,6 +63,11 @@ public class MyWebSocket {
      */
     private User user;
 
+    /** ######################### ↑↑↑↑↑ ######################### */
+
+
+    /** ######################### ↓↓↓↓↓ ######################### */
+
     /**
      * 连接建立成功调用的方法
      */
@@ -67,15 +79,25 @@ public class MyWebSocket {
         addOnlineCount(ip);
         myWebSocketSet.add(this);
 
+//        Set set = redisTemplate.opsForZSet().rangeWithScores("message", 0, -1);
+//
+//        Iterator iterator = set.iterator();
+//        String message = "";
+//        while (iterator.hasNext()) {
+//            ZSetOperations.TypedTuple val = (ZSetOperations.TypedTuple) iterator.next();
+//            message += String.valueOf(val.getValue());
+//        }
+//        broadcast(message);
         Set set = redisTemplate.opsForZSet().rangeWithScores("message", 0, -1);
 
         Iterator iterator = set.iterator();
-        String message = "";
+        JSONArray array = new JSONArray();
         while (iterator.hasNext()) {
             ZSetOperations.TypedTuple val = (ZSetOperations.TypedTuple) iterator.next();
-            message += String.valueOf(val.getValue());
+            Message msg = (Message) val.getValue();
+            array.add(msg);
         }
-        broadcast(message);
+        broadcast(array);
     }
 
     /**
@@ -93,10 +115,20 @@ public class MyWebSocket {
     @OnMessage
     public void onMessage(String message){//, Session session
         String str = user.getName() != null? user.getName() : user.getIp();
-        String result = "<p style='color: red; margin-bottom: 5px;'>【" + str + "】" + user.getEquipment() + user.getAttendedMode() + "</p><p style='padding-left: 5px;'>" + message + "</p></br>";
-        broadcast(result);
+        //String result = "<p style='color: red; margin-bottom: 5px;'>【" + str + "】" + user.getEquipment() + user.getAttendedMode() + "</p><p style='padding-left: 5px;'>" + message + "</p></br>";
+        //String result = "<p style='color: red; margin-bottom: 5px;'>【" + str + "】" + CommonUtils.parseDate() + "<span style='display: none;'>" + System.currentTimeMillis() + "</span>" + "</p><p style='padding-left: 5px;'>" + message + "</p></br>";
 
-        redisTemplate.opsForZSet().add("message", result, System.currentTimeMillis());
+
+
+        Message msg = new Message();
+        msg.setUser(user);
+        msg.setContent(message);
+        msg.setNow(CommonUtils.parseDate());
+        msg.setTimestamp(System.currentTimeMillis());
+
+        broadcast(msg);
+
+        redisTemplate.opsForZSet().add("message", msg, System.currentTimeMillis());
     }
 
     /**
@@ -107,6 +139,11 @@ public class MyWebSocket {
         log.error("发生错误！");
         error.printStackTrace();
     }
+
+    /** ######################### ↑↑↑↑↑ ######################### */
+
+
+    /** ######################### ↓↓↓↓↓ ######################### */
 
     /**
      * 群发消息
@@ -119,6 +156,31 @@ public class MyWebSocket {
             myWebSocket.session.getAsyncRemote().sendText(message);
         }
     }
+
+    public void broadcast(Message msg){
+        for (MyWebSocket myWebSocket : myWebSocketSet){
+            myWebSocket.session.getAsyncRemote().sendText(JSON.toJSONString(msg));
+        }
+    }
+
+    public void broadcast(JSONArray array){
+        for (MyWebSocket myWebSocket : myWebSocketSet){
+            synchronized (myWebSocket){
+                array.forEach(item -> {
+                    try {
+                        myWebSocket.session.getBasicRemote().sendText(JSON.toJSONString(item));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
+            }
+        }
+    }
+
+    /** ######################### ↑↑↑↑↑ ######################### */
+
+
+    /** ######################### ↓↓↓↓↓ ######################### */
 
 
     /**
@@ -158,4 +220,6 @@ public class MyWebSocket {
     public synchronized static long getOnlineCount(){
         return MyWebSocket.online;
     }
+
+    /** ######################### ↑↑↑↑↑ ######################### */
 }

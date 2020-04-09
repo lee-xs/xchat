@@ -56,6 +56,11 @@ public class User {
     private String equipment;
 
     /**
+     * 头像
+     */
+    private String avatar;
+
+    /**
      * 首次登入时间
      */
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")

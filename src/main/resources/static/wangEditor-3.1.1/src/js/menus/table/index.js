@@ -286,7 +286,7 @@ Table.prototype = {
         }
         const trData = locationData.tr
         const tdData = locationData.td
-        const tdIndex = tdData.index
+        const tdIndex = tdData.test
         const $currentTr = $(trData.elem)
         const $trParent = $currentTr.parent()
         const $trs = $trParent.children()
@@ -325,7 +325,7 @@ Table.prototype = {
         }
         const trData = locationData.tr
         const tdData = locationData.td
-        const tdIndex = tdData.index
+        const tdIndex = tdData.test
         const $currentTr = $(trData.elem)
         const $trParent = $currentTr.parent()
         const $trs = $trParent.children()
