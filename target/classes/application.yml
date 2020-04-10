@@ -41,3 +41,6 @@ spring:
     servlet:
       content-type: text/html
     suffix: .html
+
+  mvc:
+    static-path-pattern: /**

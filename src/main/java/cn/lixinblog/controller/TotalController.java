@@ -6,10 +6,7 @@ import cn.lixinblog.websocket.MyWebSocket;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class TotalController {
@@ -24,9 +21,9 @@ public class TotalController {
         return Response.info(HttpStatus.OK.value(), o);
     }
 
-    @PostMapping("/ip/{ip}/name/{name}")
-    public Response putName(@PathVariable("ip") String ip, @PathVariable("name") String name){
-        return userService.putName(ip, name);
+    @PostMapping("/put")
+    public Response putName(@RequestParam("ip") String ip, @RequestParam("name") String name, @RequestParam("avatar") String avatar){
+        return userService.putName(ip, name, avatar);
     }
 
     @GetMapping("/info/{ip}")

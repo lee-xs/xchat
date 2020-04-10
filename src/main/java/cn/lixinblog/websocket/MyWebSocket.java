@@ -16,7 +16,9 @@ import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -91,13 +93,13 @@ public class MyWebSocket {
         Set set = redisTemplate.opsForZSet().rangeWithScores("message", 0, -1);
 
         Iterator iterator = set.iterator();
-        JSONArray array = new JSONArray();
+        List<Message> list = new ArrayList<>();
         while (iterator.hasNext()) {
             ZSetOperations.TypedTuple val = (ZSetOperations.TypedTuple) iterator.next();
             Message msg = (Message) val.getValue();
-            array.add(msg);
+            list.add(msg);
         }
-        broadcast(array);
+        broadcast(list);
     }
 
     /**
@@ -118,16 +120,12 @@ public class MyWebSocket {
         //String result = "<p style='color: red; margin-bottom: 5px;'>【" + str + "】" + user.getEquipment() + user.getAttendedMode() + "</p><p style='padding-left: 5px;'>" + message + "</p></br>";
         //String result = "<p style='color: red; margin-bottom: 5px;'>【" + str + "】" + CommonUtils.parseDate() + "<span style='display: none;'>" + System.currentTimeMillis() + "</span>" + "</p><p style='padding-left: 5px;'>" + message + "</p></br>";
 
-
-
         Message msg = new Message();
         msg.setUser(user);
         msg.setContent(message);
         msg.setNow(CommonUtils.parseDate());
         msg.setTimestamp(System.currentTimeMillis());
-
         broadcast(msg);
-
         redisTemplate.opsForZSet().add("message", msg, System.currentTimeMillis());
     }
 
@@ -163,17 +161,19 @@ public class MyWebSocket {
         }
     }
 
-    public void broadcast(JSONArray array){
+    public void broadcast(List list){
         for (MyWebSocket myWebSocket : myWebSocketSet){
-            synchronized (myWebSocket){
-                array.forEach(item -> {
-                    try {
-                        myWebSocket.session.getBasicRemote().sendText(JSON.toJSONString(item));
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
-            }
+//            synchronized (myWebSocket){
+//                array.forEach(item -> {
+//                    try {
+//                        myWebSocket.session.getBasicRemote().sendText(JSON.toJSONString(item));
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                });
+//            }
+
+            myWebSocket.session.getAsyncRemote().sendText(JSON.toJSONString(list));
         }
     }
 

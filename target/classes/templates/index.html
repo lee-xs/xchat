@@ -6,8 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XChat</title>
 
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <!-- Layui css -->
+    <link rel="stylesheet" href="/layui/css/layui.css" />
     <!-- Soho css -->
-    <link rel="stylesheet" href="css/soho.min.css">
+    <link rel="stylesheet" href="/css/soho.min.css">
+    <style type="text/css">
+        .img {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+        }
+        .img:hover{
+            border: 1px solid #ff8711;
+        }
+    </style>
 </head>
 <body>
 <!-- layout -->
@@ -20,10 +34,10 @@
             <div class="chat-header" style="padding-bottom: 10px;">
                 <div class="chat-header-user">
                     <figure class="avatar avatar-lg">
-                        <img id="infoAvatar" class="rounded-circle">
+                        <img id="infoAvatar" src="img/6.jpg" class="rounded-circle">
                     </figure>
                     <div>
-                        <h5 id="infoName">Admin</h5>
+                        <h5 id="infoName"></h5>
                         <small class="text-muted">
                             <i>Online</i>
                         </small>
@@ -31,7 +45,7 @@
                 </div>
                 <div class="chat-header-action" style="text-align: right;">
                     <p id="online"></p>
-                    <p id="date">2020/4/9 14:34:20</p>
+                    <p id="date"></p>
                 </div>
             </div>
             <div id="main" class="chat-body">
@@ -41,7 +55,7 @@
             </div>
             <div class="chat-footer">
                 <form onsubmit="return false">
-                    <input id="inputMessage" type="text" class="form-control" placeholder="请输入内容">
+                    <input id="inputMessage" type="text" class="form-control" autocomplete="off" placeholder="请输入内容">
                     <div class="form-buttons">
                         <div onclick="send()" class="btn btn-primary btn-floating">
                             <i class="fa fa-send"></i>
@@ -49,9 +63,6 @@
                     </div>
                 </form>
             </div>
-
-
-
         </div>
         <!-- ./ chat -->
     </div>
@@ -59,28 +70,51 @@
 </div>
 <!-- ./ layout -->
 
-    <div id="inputName" style="display: none; padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">
-        <input type="text" id="name" name="title" placeholder="请输入用户名"  class="layui-input">
+
+
+<div class="modal fade" id="inputInfoModal" data-backdrop="static" data-keyboard="false">
+    <div  class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="background-color: #393D49;">
+            <div class="modal-body">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="请输入用户名，并选择一个头像后进入聊天室"  style="padding-left: 10px; width: 100%; border-radius: 2px; border-style: solid; line-height: 1.3; height: 38px; border-width: 1px; border-color: #e6e6e6;outline:none;" autocomplete="off"/>
+                </div>
+                <div class="container">
+                    <div class="row" id="imgList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border: none; background: #fff;">
+                <div id="putInfo" type="button" class="btn btn-primary">确认</div>
+            </div>
+        </div>
     </div>
+</div>
 </body>
 
 
+
+
+
 <!-- JQuery -->
-<script src="js/jquery-3.4.1.js"></script>
+<script src="/js/jquery-3.4.1.js"></script>
 <!-- Bootstrap -->
-<!--<script src="vendor/bootstrap/bootstrap.min.js"></script>-->
+<script src="/vendor/bootstrap/bootstrap.min.js"></script>
 <!-- Nicescroll -->
-<!--<script src="vendor/jquery.nicescroll.min.js"></script>-->
+<script src="/vendor/jquery.nicescroll.min.js"></script>
 <!-- Soho -->
-<!--<script src="js/soho.min.js"></script>-->
+<script src="/js/soho.min.js"></script>
 <!-- sohu ip -->
 <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+
 <!-- layui js -->
-<script src="layui/layui.all.js"></script>
+<script src="/layui/layui.js"></script>
 
 <script type="text/javascript">
     let websocket = null;
     let user = {};
+    let img;
 
     //时间走动
     getDates()
@@ -97,50 +131,88 @@
             async: false,
             success: function(res) {
                 user = res.data
-                console.log(user)
-                $('#infoName').text("用户名：" + user.name)
-                $('#infoAvatar').attr('src', user.avatar)
+                if(user.name != "" && user.name != null && user.avatar != "" && user.avatar != null){
+                    $('#infoName').text("用户名：" + user.name)
+                    $('#infoAvatar').attr('src', user.avatar)
+                }
                 handleTimerOnline()
                 setInterval("handleTimerOnline()", 2000)
             }
         })
 
         if(user.name == "" || user.name == null || user.name == undefined){
+
+            for(let i = 1; i < 22; i++){
+                $('#imgList').append(`<div class="col-2" style="padding: 2px;"><img style="width: 100%;" src="/img/${i}.jpg" class="img img-responsive"/></div>`)
+            }
+
+            $('#inputInfoModal').modal('show')
+
+
+
             layui.use(['layer'], function () {
                 const layer = layui.layer
 
                 /**
                  * 打开输入用户名输入框
-                 */
-                parent.layer.open({
-                    type: 1
-                    ,title: false //不显示标题栏
-                    ,closeBtn: false
-                    ,area: '300px;'
-                    //,shade: 0.8 //遮罩透明度
-                    ,id: 'name_enter' //设定一个id，防止重复弹出
-                    ,btn: ['确认']
-                    ,btnAlign: 'c'  // 按钮居中对齐
-                    ,moveType: 1 //拖拽模式，0或者1
-                    ,content: $('#inputName')
-                    ,yes: function (index, layero) {
-                        const val = $('#name').val()
-                        if(val != '' && val != null && val != undefined){
-                            $.post('/ip/' + returnCitySN["cip"] + '/name/' + $('#name').val(), function (res) {
-                                if(res.code == 200){
-                                    info()
-                                    layer.close(index)
-                                } else if (res.code == 409){
-                                    layer.msg(res.message)
-                                }
-                            })
-                        }else{
-                            layer.msg("请填写一个用户名后进入")
+                //  */
+                // layer.open({
+                //     type: 1
+                //     ,title: false //不显示标题栏
+                //     ,closeBtn: false
+                //     ,area: ['800px', '470px']
+                //     ,shade: 0.9 //遮罩透明度
+                //     ,id: 'name_enter' //设定一个id，防止重复弹出
+                //     ,content: `
+                //         <div>
+                //             <div id="inputInfo" style="padding: 30px 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">
+                //                 <input type="text" id="name" name="title" placeholder="请输入用户名,并选择一个头像后进入聊天室" autocomplete="off" class="layui-input">
+                //                 <div id="infoResult" style="width: 100%; height: 30px; color: red; font-size: 12px;"></div>
+                //                 <div id="imgList" style=" "></div>
+                //             </div>
+                //             <div id="putInfo" class="layui-btn" style="width: 100%; height: 42px; line-height: 42px; text-align: center; background: #1E9FFF; color: #FFFFFF;">确定</div>
+                //         </div>
+                //      `
+                //     ,success: function (index, layero) {
+                //         for(let i = 1; i < 22; i++){
+                //             $('#imgList').append(`<img src="/img/${i}.jpg" class="img"/>`)
+                //             //$('#imgList').append(`<div class="col-2" style="padding: 2px;"><img style="width: 100%;" src="/img/${i}.jpg" class="img"/></div>`)
+                //         }
+                //     }
+                // });
+            })
+
+            /**
+             * 设置选中头像的样式
+             */
+            $('.col-2').click(function () {
+                const that = $(this)
+                img = that[0].src
+                that.children().css("border", "1px solid #1E9FFF")
+                that.siblings().children().css("border", "none")
+            })
+
+            /**
+             * 添加信息
+             */
+            $('#putInfo').click(function () {
+                const val = $('#name').val()
+                if(val != '' && val != null && img != '' && img != null){
+                    $.post('/put', {"ip": returnCitySN["cip"], "name": $('#name').val(), "avatar": img }, function (res) {
+                        if(res.code == 200){
+                            info()
+                            layer.closeAll()
+                        } else if (res.code == 409){
+                            $('#infoResult').text(res.message)
                         }
-                    }
-                });
+                    })
+                }else{
+                    layer.msg("请填写用户名并选择头像后进入")
+                }
             })
         }
+
+
 
         if('WebSocket' in window) {
             //websocket = new WebSocket("ws://ali.aleestar.cn/websocket/" + returnCitySN["cip"])
@@ -179,15 +251,24 @@
      */
     function parseMassage(data){
         data = JSON.parse(data)
+        if(data instanceof Array){
+            data.forEach((item) => {
+                message(item)
+            })
+        }else{
+            message(data)
+        }
+    }
+    function message(data) {
         let message;
         if(data.user.name == user.name){
-            message = `<div class="message-item outgoing-message">`
+            message = `<div class="message-item outgoing-message"><div style="text-align: left; float:right; font-size: 12px; margin: 10px 0 5px; color: #828282;">【${data.user.name}】  ${data.now}</div><div><span style='font-size: 14px; float: right; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div></div>`
         } else {
-            message = `<div class="message-item">`
+            message = `<div class="message-item"><div style="text-align: left; float:left; font-size: 12px; margin: 10px 0 5px; color: #828282;">【${data.user.name}】  ${data.now}</div><div><span style='font-size: 14px; float: left; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div></div>`
         }
-        message += `<div style="text-align: right;font-size: 12px; margin: 10px 0 5px; color: #828282;">【${data.user.name}】  ${data.now}</div><div><span style='font-size: 14px; float: right; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div></div>`
         wirteMessageInnerHTML(message)
     }
+
     /**
      * 展示消息 输出信息到页面展示
      * @param data

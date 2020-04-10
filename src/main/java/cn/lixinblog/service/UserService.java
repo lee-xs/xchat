@@ -37,14 +37,11 @@ public class UserService {
      * @param name
      * @return
      */
-    public Response putName(String ip, String name) {
-        int index = userMapper.putName(ip, name);
-        JSONObject o = new JSONObject();
-        if(index == 1){
-            o.put("message", "登入成功");
-            return Response.info(HttpStatus.OK.value(), o);
+    public Response putName(String ip, String name, String avatar) {
+        if(userMapper.findByName(name) != null){
+            return Response.info(HttpStatus.CONFLICT.value(), "用户名已存在");
         }
-        o.put("message", "用户名已存在");
-        return Response.info(HttpStatus.CONFLICT.value(), o);
+        userMapper.putName(ip, name, avatar);
+        return Response.info(HttpStatus.OK.value(), "登入成功");
     }
 }
