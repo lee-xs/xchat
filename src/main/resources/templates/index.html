@@ -200,14 +200,16 @@
                 if(val != '' && val != null && img != '' && img != null){
                     $.post('/put', {"ip": returnCitySN["cip"], "name": $('#name').val(), "avatar": img }, function (res) {
                         if(res.code == 200){
-                            info()
-                            layer.closeAll()
+                            //info()
+                            //layer.closeAll()
+                            window.location.reload()
                         } else if (res.code == 409){
                             $('#infoResult').text(res.message)
                         }
                     })
                 }else{
-                    layer.msg("请填写用户名并选择头像后进入")
+                    //layer.msg("请填写用户名并选择头像后进入")
+                    $('#infoResult').text("请填写用户名并选择头像后进入")
                 }
             })
         }
