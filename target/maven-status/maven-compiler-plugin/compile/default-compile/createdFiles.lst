@@ -1,0 +1,15 @@
+cn\lixinblog\mapper\UserMapper.class
+cn\lixinblog\config\RedisConfig.class
+cn\lixinblog\entity\Message.class
+cn\lixinblog\controller\RouterController.class
+cn\lixinblog\interceptor\MyInterceptor.class
+cn\lixinblog\utils\IpUtils.class
+cn\lixinblog\service\UserService.class
+cn\lixinblog\controller\TotalController.class
+cn\lixinblog\config\WebSocketConfig.class
+cn\lixinblog\utils\CommonUtils.class
+cn\lixinblog\dto\Response.class
+cn\lixinblog\config\InterceptorConfig.class
+cn\lixinblog\websocket\MyWebSocket.class
+cn\lixinblog\XChatApplication.class
+cn\lixinblog\entity\User.class
