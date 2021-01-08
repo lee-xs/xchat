@@ -7,5 +7,5 @@ qq varchar(64),
 ip varchar(64),
 equipment varchar(128),
 attended_mode varchar(128),
-created_time date,
+created_time date
 );

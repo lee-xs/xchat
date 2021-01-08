@@ -2,166 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b828cbd-5f8c-4b9a-b1ab-0cc428322f1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xchat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/icons/themify/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery.nicescroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/TotalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/TotalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lixinblog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/MyWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/MyWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/db.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/db.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/controller/TotalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/lixinblog/controller/TotalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/lixinblog/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/lixinblog/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/websocket/MyWebSocket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="74" column="88" selection-start-line="74" selection-start-column="88" selection-end-line="74" selection-end-column="88" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="99" selection-start-line="99" selection-end-line="119" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/MyWebSocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="158" column="55" selection-start-line="158" selection-start-column="55" selection-end-line="158" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/TotalController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -172,54 +48,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>returnCitySN</find>
-      <find>message-item</find>
-      <find>message-item{max-width</find>
-      <find>.chat-body{-</find>
-      <find>message-content</find>
-      <find>body</find>
-      <find>message-content{</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/config/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/webSocketTest.html" />
-        <option value="$PROJECT_DIR$/doc/db.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/XChatApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cn/lixinblog/XChatApplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interceptor/MyInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/InfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/dto/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/utils/IpUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/config/InterceptorConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/interceptor/MyInterceptor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/entity/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/utils/CommonUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/soho.min.css" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/RouterController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/TotalController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/MyWebSocket.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test01.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      </list>
-    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -227,208 +57,16 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="xchat" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="xchat" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="xchat" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="160" />
     <option name="y" value="35" />
     <option name="width" value="1755" />
     <option name="height" value="975" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lixinblog" type="462c0819:PsiDirectoryNode" />
-              <item name="websocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xchat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xchat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1kBRVQRkb81B2L1QqQlblobRjtd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -440,7 +78,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-learn" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587287264341" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -454,7 +93,23 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.lixinblog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\idea\xchat\src\main\resources\static" />
+      <recent name="D:\java\xchat\src\main\resources\static\img" />
+      <recent name="D:\java\xchat\src\main\resources\static\js" />
+      <recent name="D:\java\xchat\src\main\resources\templates" />
+      <recent name="D:\java\xchat\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.lixinblog.config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\xchat\src\main\resources\static" />
       <recent name="D:\java\xchat\src\main\resources\static\js" />
@@ -462,30 +117,6 @@
       <recent name="D:\java\xchat\src\main\resources\static\css" />
       <recent name="D:\java\xchat\src\test\java" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="cn.lixinblog" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.lixinblog.config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\xchat\src\main\resources\static\img" />
-      <recent name="D:\java\xchat\src\main\resources\static\js" />
-      <recent name="D:\java\xchat\src\main\resources\templates" />
-      <recent name="D:\java\xchat\src\main\resources\static" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.XChatApplication">
     <configuration name="XChatApplicationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -540,6 +171,14 @@
       <workItem from="1586392220418" duration="11450000" />
       <workItem from="1586407530914" duration="13820000" />
       <workItem from="1586478509287" duration="29781000" />
+      <workItem from="1586525995484" duration="4994000" />
+      <workItem from="1587287193413" duration="82000" />
+      <workItem from="1587287383345" duration="130000" />
+      <workItem from="1595254881485" duration="4760000" />
+      <workItem from="1596942729345" duration="42000" />
+      <workItem from="1605172022347" duration="119000" />
+      <workItem from="1609121938072" duration="58000" />
+      <workItem from="1610096575193" duration="1517000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586336385201</created>
@@ -551,483 +190,84 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105569000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49900597" visible="true" weight="0.19477911" />
-      <window_info id="Structure" order="1" sideWeight="0.500994" side_tool="true" weight="0.25301206" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32957748" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.1915493" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50066936" side_tool="true" weight="0.32957748" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32957748" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49933067" weight="0.32957748" />
-      <window_info anchor="bottom" id="MyBatis Log" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32931727" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.1.0/mapper-base-1.1.0.jar!/tk/mybatis/mapper/common/example/SelectByExampleMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/lixinblog/XChatApplicationTest.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/eu/bitwalker/UserAgentUtils/1.21/UserAgentUtils-1.21.jar!/eu/bitwalker/useragentutils/UserAgent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="42" column="71" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="71" />
-          <folding>
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/eu/bitwalker/UserAgentUtils/1.21/UserAgentUtils-1.21.jar!/eu/bitwalker/useragentutils/Browser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21.jar!/javax/websocket/RemoteEndpoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-core/1.1.0/mapper-core-1.1.0.jar!/tk/mybatis/mapper/entity/Example.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="730" column="32" selection-start-line="730" selection-start-column="32" selection-end-line="730" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21.jar!/org/apache/tomcat/websocket/pojo/PojoEndpointBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21.jar!/javax/websocket/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/config/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/javax/websocket/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-717">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/CopyOnWriteArraySet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="243" column="19" selection-start-line="243" selection-start-column="19" selection-end-line="243" selection-end-column="19" />
-          <folding>
-            <element signature="e#8114#8115#0" expanded="true" />
-            <element signature="e#8149#8150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="853" column="9" selection-start-line="853" selection-start-column="9" selection-end-line="853" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/dto/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-base/1.1.0/mapper-base-1.1.0.jar!/tk/mybatis/mapper/common/example/UpdateByExampleMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="215" column="12" selection-start-line="215" selection-start-column="4" selection-end-line="215" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="466" column="44" selection-start-line="466" selection-start-column="44" selection-end-line="466" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/XChatApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-873">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.9.RELEASE/spring-data-redis-2.1.9.RELEASE.jar!/org/springframework/data/redis/core/ScanOptions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.9.RELEASE/spring-data-redis-2.1.9.RELEASE-sources.jar!/org/springframework/data/redis/core/ScanOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.9.RELEASE/spring-data-redis-2.1.9.RELEASE-sources.jar!/org/springframework/data/redis/core/ZSetOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="464" column="26" selection-start-line="464" selection-start-column="26" selection-end-line="464" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/utils/IpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/config/annotation/InterceptorRegistration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/interceptor/MyInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/config/InterceptorConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/deploy.jar!/com/sun/deploy/services/Service.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/entity/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="65" column="37" lean-forward="true" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/utils/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/soho.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="121818" selection-start-line="8" selection-start-column="121818" selection-end-line="8" selection-end-column="121818" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/RouterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-1.9.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layui/layui.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="10576" column="8" selection-start-line="10576" selection-start-column="8" selection-end-line="10576" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="78" selection-start-line="78" selection-end-line="82" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layui/images/face/0.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layui/images/face/6.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/33.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/34.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/35.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2090">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/TotalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/javax/websocket/RemoteEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="92" column="31" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/MyWebSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="158" column="55" selection-start-line="158" selection-start-column="55" selection-end-line="158" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="99" selection-start-line="99" selection-end-line="119" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="74" column="88" selection-start-line="74" selection-start-column="88" selection-end-line="74" selection-end-column="88" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1610096823323">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610096823323" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1609121994529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1609121994529" />
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom" timestamp="1610097051979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.0.bottom/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051979" />
+    <state width="1493" height="137" key="GridCell.Tab.0.center" timestamp="1610097051979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.0.center/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051979" />
+    <state width="1493" height="137" key="GridCell.Tab.0.left" timestamp="1610097051978">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.0.left/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051978" />
+    <state width="1493" height="137" key="GridCell.Tab.0.right" timestamp="1610097051979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.0.right/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051979" />
+    <state width="1493" height="137" key="GridCell.Tab.1.bottom" timestamp="1610097051767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.1.bottom/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051767" />
+    <state width="1493" height="137" key="GridCell.Tab.1.center" timestamp="1610097051767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.1.center/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051767" />
+    <state width="1493" height="137" key="GridCell.Tab.1.left" timestamp="1610097051767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.1.left/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051767" />
+    <state width="1493" height="137" key="GridCell.Tab.1.right" timestamp="1610097051767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.1.right/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051767" />
+    <state width="1493" height="137" key="GridCell.Tab.2.bottom" timestamp="1610097051768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.2.bottom/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051768" />
+    <state width="1493" height="137" key="GridCell.Tab.2.center" timestamp="1610097051768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.2.center/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051768" />
+    <state width="1493" height="137" key="GridCell.Tab.2.left" timestamp="1610097051768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.2.left/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051768" />
+    <state width="1493" height="137" key="GridCell.Tab.2.right" timestamp="1610097051768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="137" key="GridCell.Tab.2.right/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610097051768" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610096652032">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/-1440.173.1440.860@0.0.1536.824" timestamp="1610096652032" />
   </component>
   <component name="masterDetails">
     <states>

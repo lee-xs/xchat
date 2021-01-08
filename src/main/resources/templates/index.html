@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>XChat</title>
+    <title>XChat在线聊天室</title>
 
+    <link rel="shortcut icon" href="https://q1.qlogo.cn/g?b=qq&nk=52110919&s=640">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <!-- Layui css -->
@@ -78,6 +79,7 @@
             <div class="modal-body">
                 <div>
                     <input type="text" id="name" name="name" placeholder="请输入用户名，并选择一个头像后进入聊天室"  style="padding-left: 10px; width: 100%; border-radius: 2px; border-style: solid; line-height: 1.3; height: 38px; border-width: 1px; border-color: #e6e6e6;outline:none;" autocomplete="off"/>
+                    <div id="infoResult" style="width: 100%; margin-top: 5px; color: red; font-size: 12px;"></div>
                 </div>
                 <div class="container">
                     <div class="row" id="imgList">
@@ -85,8 +87,8 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer" style="border: none; background: #fff;">
-                <div id="putInfo" type="button" class="btn btn-primary">确认</div>
+            <div class="modal-footer" style="border: none; padding: 10px 0; background: #fff;">
+                <div id="putInfo" type="button" style="margin: auto;" class="btn btn-primary">确认</div>
             </div>
         </div>
     </div>
@@ -143,7 +145,7 @@
         if(user.name == "" || user.name == null || user.name == undefined){
 
             for(let i = 1; i < 22; i++){
-                $('#imgList').append(`<div class="col-2" style="padding: 2px;"><img style="width: 100%;" src="/img/${i}.jpg" class="img img-responsive"/></div>`)
+                $('#imgList').append(`<div class="col-2" style="padding: 2px;"><img style="width: 100%;" src="/img/${i}.jpg" class="carousel-inner img-responsive img-rounded"/></div>`)
             }
 
             $('#inputInfoModal').modal('show')
@@ -187,7 +189,7 @@
              */
             $('.col-2').click(function () {
                 const that = $(this)
-                img = that[0].src
+                img = that.children()[0].src
                 that.children().css("border", "1px solid #1E9FFF")
                 that.siblings().children().css("border", "none")
             })
@@ -200,14 +202,15 @@
                 if(val != '' && val != null && img != '' && img != null){
                     $.post('/put', {"ip": returnCitySN["cip"], "name": $('#name').val(), "avatar": img }, function (res) {
                         if(res.code == 200){
-                            info()
-                            layer.closeAll()
+                            //info()
+                            //$('#inputInfoModal').modal('hide');
+                            window.location.reload()
                         } else if (res.code == 409){
                             $('#infoResult').text(res.message)
                         }
                     })
                 }else{
-                    layer.msg("请填写用户名并选择头像后进入")
+                    $('#infoResult').text("请填写用户名并选择头像后进入")
                 }
             })
         }
@@ -215,8 +218,8 @@
 
 
         if('WebSocket' in window) {
-            //websocket = new WebSocket("ws://ali.aleestar.cn/websocket/" + returnCitySN["cip"])
-            websocket = new WebSocket("ws://localhost:2922/websocket/" + returnCitySN["cip"])
+            websocket = new WebSocket("ws://blog.aleestar.cn:2923/websocket/" + returnCitySN["cip"])
+            //websocket = new WebSocket("ws://localhost:2923/websocket/" + returnCitySN["cip"])
         } else {
             alert("Not Support WebSocket")
         }
@@ -262,9 +265,23 @@
     function message(data) {
         let message;
         if(data.user.name == user.name){
-            message = `<div class="message-item outgoing-message"><div style="text-align: left; float:right; font-size: 12px; margin: 10px 0 5px; color: #828282;">【${data.user.name}】  ${data.now}</div><div><span style='font-size: 14px; float: right; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div></div>`
+            message = `
+                <div class="message-item outgoing-message" style="margin-top: 12px;">
+                    <div style="float: left;">
+                        <div style="text-align: left; float:right; font-size: 12px; margin: 0 0 5px 0; color: #828282;">【${data.user.name}】  ${data.now}</div>
+                        <div><span style='font-size: 14px; float: right; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div>
+                    </div>
+                    <div style="float: right;"><img src="${data.user.avatar}" style="width: 40px; height: 40px; margin-left: 10px; border-radius: 50%"/></div>
+                </div>`
         } else {
-            message = `<div class="message-item"><div style="text-align: left; float:left; font-size: 12px; margin: 10px 0 5px; color: #828282;">【${data.user.name}】  ${data.now}</div><div><span style='font-size: 14px; float: left; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div></div>`
+            message = `
+                <div class="message-item">
+                    <div style="float: right;" style="margin-top: 12px;">
+                        <div style="text-align: left; float:left; font-size: 12px; margin: 0 0 5px 0; color: #828282;">【${data.user.name}】  ${data.now}</div>
+                        <div><span style='font-size: 14px; float: left; padding: 8px 20px; border-radius: 5px; background-color: #CDCDCD; color: #212529;'>${data.content}</span></div>
+                    </div>
+                    <div style="float: left;"><img src="${data.user.avatar}" style="width: 40px; height: 40px; margin-right: 10px; border-radius: 50%"/></div>
+                </div>`
         }
         wirteMessageInnerHTML(message)
     }
