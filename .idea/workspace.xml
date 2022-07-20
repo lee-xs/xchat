@@ -4,25 +4,365 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b828cbd-5f8c-4b9a-b1ab-0cc428322f1d" name="Default Changelist" comment="">
+    <list default="true" id="4b828cbd-5f8c-4b9a-b1ab-0cc428322f1d" name="Default Changelist" comment="前段地址修改">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/XChatApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/XChatApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/RouterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/controller/RouterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/controller/TotalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/controller/TotalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/dto/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/dto/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/entity/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/interceptor/MyInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/interceptor/MyInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/utils/IpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/utils/IpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lixinblog/websocket/MyWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/alees/websocket/MyWebSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/XChatApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/config/InterceptorConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/config/WebSocketConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/controller/RouterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/controller/TotalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/dto/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/interceptor/MyInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/utils/CommonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/utils/IpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/lixinblog/websocket/MyWebSocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/soho.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/icons/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/icons/themify/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/examples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/soho.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/transfer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/ISSUE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/dev/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/01-getstart/01-demo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/01-getstart/02-use-module.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/01-getstart/03-sperate.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/01-getstart/04-multi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/02-content/01-set-content.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/02-content/02-get-content.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/02-content/03-use-textarea.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/02-content/04-get-json.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/01-menu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/02-debug.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/03-onchange.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/04-z-index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/05-lang.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/06-paste.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/07-linkImgCallback.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/08-linkCheck.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/09-onfocus.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/10-onblur.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/11-linkImgCheck.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/12-colors.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/13-emot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/03-config/14-font-name.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/04-uploadimg/01-show-tab.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/04-uploadimg/02-base64.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/04-uploadimg/03-upload-config.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/04-uploadimg/04-qiniu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/01-全屏-预览-查看源码.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/02-上传附件.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/03-markdown.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/04-xss.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/05-react.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/06-vue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/07-ng.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/05-other/08-api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/docs/usage/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-react/src/registerServiceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/dev-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/dev-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/src/components/Editor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/src/components/Hello.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/in-vue/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-amd-main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-amd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-css-reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-emot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-fullscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-get-content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-getJSON.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-lang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-menus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-mult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-onblur.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-onchange.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-onfocus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-paste.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-set-content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-sperate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-textarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/demo/test-uploadimg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/Read Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/demo-files/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/demo-files/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/fonts/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/fonts/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/fonts/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/selection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/icomoon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/pay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/server/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/example/server/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/release/fonts/w-e-icon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/release/wangEditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/release/wangEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/release/wangEditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/release/wangEditor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/release/wangEditor.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/fonts/w-e-icon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/command/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/editor/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/editor/upload/progress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/editor/upload/upload-img.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/backColor/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/bold/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/code/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/droplist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/emoticon/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/fontName/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/fontSize/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/foreColor/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/head/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/img/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/italic/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/justify/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/link/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/list/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/menu-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/quote/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/redo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/strikethrough/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/table/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/underline/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/undo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/menus/video/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/selection/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/text/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/util/dom-core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/util/paste-handle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/util/poly-fill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/util/replace-lang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/js/util/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/less/common.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/less/droplist.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/less/icon.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/less/menus.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/less/panel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/wangEditor-3.1.1/src/less/text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xchat-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xchat-1.0.0-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +398,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -82,11 +425,13 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587287264341" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -109,11 +454,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="D:\java\idea\xchat\src\main\resources\static" />
       <recent name="D:\java\xchat\src\main\resources\static\img" />
       <recent name="D:\java\xchat\src\main\resources\static\js" />
-      <recent name="D:\java\xchat\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\xchat\src\main\resources\static" />
@@ -129,20 +474,7 @@
       <recent name="cn.lixinblog.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XChatApplication">
-    <configuration name="XChatApplicationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.lixinblog.XChatApplicationTest" />
-      <module name="xchat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.alees.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="XChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="xchat" />
       <extension name="coverage">
@@ -152,6 +484,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.alees.XChatApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +493,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.XChatApplication" />
-        <item itemvalue="Application.XChatApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +524,8 @@
       <workItem from="1605172022347" duration="119000" />
       <workItem from="1609121938072" duration="58000" />
       <workItem from="1610096575193" duration="1517000" />
-      <workItem from="1658297775615" duration="100000" />
+      <workItem from="1658297775615" duration="1090000" />
+      <workItem from="1658298880057" duration="92000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586336385201</created>
@@ -200,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586336385201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="地址更新">
+      <created>1658297908227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658297908227</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,10 +567,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="地址更新" />
+    <MESSAGE value="前段地址修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="前段地址修改" />
   </component>
   <component name="masterDetails">
     <states>
