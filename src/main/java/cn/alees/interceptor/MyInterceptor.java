@@ -1,8 +1,7 @@
-package cn.lixinblog.interceptor;
+package cn.alees.interceptor;
 
-import cn.lixinblog.entity.User;
-import cn.lixinblog.service.UserService;
-import cn.lixinblog.utils.IpUtils;
+import cn.alees.entity.User;
+import cn.alees.service.UserService;
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.OperatingSystem;
 import eu.bitwalker.useragentutils.UserAgent;

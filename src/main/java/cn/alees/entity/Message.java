@@ -1,4 +1,4 @@
-package cn.lixinblog.entity;
+package cn.alees.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

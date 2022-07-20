@@ -1,6 +1,6 @@
-package cn.lixinblog.config;
+package cn.alees.config;
 
-import cn.lixinblog.interceptor.MyInterceptor;
+import cn.alees.interceptor.MyInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

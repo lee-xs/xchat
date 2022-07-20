@@ -1,4 +1,4 @@
-package cn.lixinblog.utils;
+package cn.alees.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package cn.lixinblog.utils;
+package cn.alees.utils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;

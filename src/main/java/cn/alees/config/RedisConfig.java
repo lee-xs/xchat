@@ -1,4 +1,4 @@
-package cn.lixinblog.config;
+package cn.alees.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

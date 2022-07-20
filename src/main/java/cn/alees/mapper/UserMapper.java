@@ -1,6 +1,6 @@
-package cn.lixinblog.mapper;
+package cn.alees.mapper;
 
-import cn.lixinblog.entity.User;
+import cn.alees.entity.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;

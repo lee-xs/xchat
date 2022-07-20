@@ -1,4 +1,4 @@
-package cn.lixinblog.controller;
+package cn.alees.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

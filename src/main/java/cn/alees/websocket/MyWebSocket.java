@@ -1,11 +1,10 @@
-package cn.lixinblog.websocket;
+package cn.alees.websocket;
 
-import cn.lixinblog.entity.Message;
-import cn.lixinblog.entity.User;
-import cn.lixinblog.service.UserService;
-import cn.lixinblog.utils.CommonUtils;
+import cn.alees.entity.Message;
+import cn.alees.entity.User;
+import cn.alees.service.UserService;
+import cn.alees.utils.CommonUtils;
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import org.springframework.stereotype.Component;
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

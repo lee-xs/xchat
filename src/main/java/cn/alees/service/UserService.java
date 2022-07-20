@@ -1,9 +1,8 @@
-package cn.lixinblog.service;
+package cn.alees.service;
 
-import cn.lixinblog.dto.Response;
-import cn.lixinblog.entity.User;
-import cn.lixinblog.mapper.UserMapper;
-import com.alibaba.fastjson.JSONObject;
+import cn.alees.dto.Response;
+import cn.alees.entity.User;
+import cn.alees.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

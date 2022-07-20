@@ -1,4 +1,4 @@
-package cn.lixinblog.entity;
+package cn.alees.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

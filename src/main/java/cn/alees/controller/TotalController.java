@@ -1,8 +1,8 @@
-package cn.lixinblog.controller;
+package cn.alees.controller;
 
-import cn.lixinblog.dto.Response;
-import cn.lixinblog.service.UserService;
-import cn.lixinblog.websocket.MyWebSocket;
+import cn.alees.dto.Response;
+import cn.alees.service.UserService;
+import cn.alees.websocket.MyWebSocket;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
