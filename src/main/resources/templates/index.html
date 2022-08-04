@@ -108,7 +108,7 @@
 <!-- Soho -->
 <script src="/js/soho.min.js"></script>
 <!-- sohu ip -->
-<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 
 <!-- layui js -->
 <script src="/layui/layui.js"></script>
@@ -218,7 +218,7 @@
 
 
         if('WebSocket' in window) {
-            websocket = new WebSocket("ws://alees.cn:2923/websocket/" + returnCitySN["cip"])
+            websocket = new WebSocket("wss://chat.alees.cn/websocket/" + returnCitySN["cip"])
             //websocket = new WebSocket("ws://localhost:2923/websocket/" + returnCitySN["cip"])
         } else {
             alert("Not Support WebSocket")
