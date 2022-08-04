@@ -65,7 +65,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.61</version>
+            <version>1.2.83</version>
         </dependency>
 
         <!-- UserAgentUtils 用于解析request请求头中user Agent中的数据：设备信息 -->
